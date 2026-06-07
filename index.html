@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Portfolio Card</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#e5e7eb;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.card{
+width:350px;
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+animation:slideUp 1s ease;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.03);
+}
+
+.header{
+background:linear-gradient(135deg,#2563eb,#7c3aed);
+color:white;
+text-align:center;
+padding:35px 20px;
+}
+
+.details{
+padding:25px;
+}
+
+.row{
+display:flex;
+justify-content:space-between;
+padding:15px 0;
+border-bottom:1px solid #ddd;
+}
+
+.label{
+font-weight:bold;
+}
+
+@keyframes slideUp{
+from{
+opacity:0;
+transform:translateY(50px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+</style>
+
+</head>
+<body>
+
+<div class="card">
+
+<div class="header">
+<h1>Your Name</h1>
+<p>Computer Science Student</p>
+</div>
+
+<div class="details">
+
+<div class="row">
+<span class="label">Roll No</span>
+<span>433</span>
+</div>
+
+<div class="row">
+<span class="label">USN</span>
+<span>01FE24BCS296</span>
+</div>
+
+<div class="row">
+<span class="label">Division</span>
+<span>D1</span>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
